@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Responsive Webpage Example</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600">
+      <div class="flex justify-between items-center p-4">
+        <div class="text-white font-bold">My Enhanced Website</div>
+        <div class="text-white mr-5 space-x-2 hidden md:flex">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white">
+      <div class="text-center py-10">
+        <h1 class="text-3xl font-bold">Welcome to My Enhanced Website</h1>
+        <p>Discover amazing content and services. Tailwind makes it magical!</p>
+      </div>
+    </section>
+
+    <!-- Featured Items Grid -->
+    <section>
+      <div class="grid sm:lg:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4">
+        <div class="bg-white p-4 rounded-lg">
+          <h2 class="font-bold">Featured Item 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+            feugiat velit.
+          </p>
+          <div class="w-auto h-auto mt-1">
+            <img src="./img/image1.jpg" alt="Featured Item 1" class="w-full h-full object-cover rounded-lg" />
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+          <h2 class="font-bold">Featured Item 2</h2>
+          <p>
+            Nulla facilisi. Sed euismod mauris at justo varius, ac ultricies
+            elit posuere.
+          </p>
+          <div class="w-auto h-auto mt-1">
+            <img src="./img/image2.jpg" alt="Featured Item 2" class="w-full h-full object-cover rounded-lg" />
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+          <h2 class="font-bold">Featured Item 3</h2>
+          <p>
+            Quisque euismod elit eu felis vestibulum, vitae mattis tortor
+            sodales.
+          </p>
+          <div class="w-auto h-auto mt-1">
+            <img src="./img/image3.jpg" alt="Featured Item 3" class="w-full h-full object-cover rounded-lg" />
+          </div>
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="flex items-center justify-center">
+      <div class="bg-white rounded-lg p-4 w-[370px]">
+        <h2 class="font-bold">Contact Us</h2>
+        <form>
+          <div>
+            <label for="name" class="font-bold">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" class="border-2 border-gray-300 rounded w-full"/>
+          </div>
+          <div>
+            <label for="email" class="font-bold">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" class="border-2 border-gray-300 rounded w-full"/>
+          </div>
+          <div>
+            <label for="message" class="font-bold">Message:</label>
+            <br>
+            <textarea id="message" name="message" rows="4" class="border-2 border-gray-300 rounded w-full"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-500 text-white p-2 rounded mt-4">Send Message</button>
+        </form>
+      </div>
+    </section>    
+  </body>
+</html>
